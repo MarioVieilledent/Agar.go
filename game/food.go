@@ -1,4 +1,4 @@
-package main
+package game
 
 import "math/rand"
 
@@ -7,7 +7,7 @@ type Food struct {
 	Y float64
 }
 
-func newFood(width, height int) Food {
+func NewFood(width, height int) Food {
 	return Food{
 		randFloats(0.0, float64(width)),
 		randFloats(0.0, float64(height)),
